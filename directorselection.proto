@@ -1,0 +1,7 @@
+syntax = "proto3";
+package directorselection;
+
+service GetInformationAboutDirectory { rpc DirectoryCall (Request) returns (Reply) {} }
+
+message Request { string string_directory_path = 1; }
+message Reply { string message = 1; }
